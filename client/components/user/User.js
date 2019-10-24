@@ -6,6 +6,7 @@ class User extends React.Component {
   };
 
   render() {
+    const { isLoggedIn } = this.state;
     return (
       <div>
         <h4>Welcome</h4>
