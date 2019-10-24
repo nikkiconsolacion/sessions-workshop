@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter,
-  Switch,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/home/Home.js';
 
 class Router extends Component {
@@ -12,7 +8,7 @@ class Router extends Component {
       <BrowserRouter>
         <Switch>
           {/* TODO: This should lead to an authenticated page... */}
-          <Route path={"/user"} exact>
+          <Route path={'/user'} exact>
             Hello There!
           </Route>
           <Route>

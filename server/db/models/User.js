@@ -5,14 +5,14 @@ const db = require('../db.js');
 // TODO: Fill out this model.
 const User = db.define('user', {
   uselessColumn: {
-    type: STRING,
+    type: STRING
   },
   id: {
     type: UUID,
     primaryKey: true,
     defaultValue: UUIDV4
   },
-  name: {
+  username: {
     type: STRING,
     allowNull: false
   },
@@ -21,6 +21,5 @@ const User = db.define('user', {
     allowNull: false
   }
 });
-
 
 module.exports = User;
